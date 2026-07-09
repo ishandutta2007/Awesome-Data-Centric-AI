@@ -1,3 +1,5 @@
+![Banner](assets/banner.svg)
+
 # Awesome-Data-Centric-AI
 ## Data-Centric AI: History, Progression, Variants, & Applications
 
@@ -7,7 +9,7 @@ In traditional **Model-Centric AI**, engineers treat the dataset as a static bas
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 🕰️ 1. The Macro Chronological Evolution
 
 The technical framework governing AI dataset management has transitioned from unstructured ad-hoc crowdsourcing to automated data pipelines, web-scale synthetic curation, and native post-training alignment environments.
 
@@ -27,7 +29,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Algorithmic Variants
+## ⚙️ 2. Core Functional & Algorithmic Variants
 
 Data-Centric AI methodologies are strictly categorized based on the exact automated mechanisms deployed to cleanse, augment, and audit the training data matrix.
 
@@ -40,7 +42,7 @@ Data-Centric AI methodologies are strictly categorized based on the exact automa
 
 ---
 
-## 3. The Data-Centric AI Pipeline Matrix
+## 🧩 3. The Data-Centric AI Pipeline Matrix
 
 To maintain absolute data quality across large-scale optimization loops, data-centric architectures coordinate continuous cleaning and alignment layers concurrently.
 
@@ -61,7 +63,7 @@ flowchart TB
 
 ---
 
-## 4. Production Engineering Challenges & Infrastructure Mitigations
+## 🏭 4. Production Engineering Challenges & Infrastructure Mitigations
 
 Implementing large-scale data-centric pipelines across massive distributed high-performance computing clusters introduces severe data latency and alignment constraints.
 
@@ -72,7 +74,7 @@ Implementing large-scale data-centric pipelines across massive distributed high-
 
 ---
 
-## 5. Frontier Real-World AI Industrial Applications
+## 🚀 5. Frontier Real-World AI Industrial Applications
 
 | Application | Details | Year | Paper | Link |
 |---|---|---|---|---|
