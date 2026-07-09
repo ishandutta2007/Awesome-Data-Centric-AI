@@ -111,3 +111,14 @@ Before updating this repository workspace layout, let me know how you would like
 * I can provide a **complete Python code boilerplate using PyTorch** demonstrating how to write an automated script that calculates an exact k-center CoreSet selection data pruning loop.
 * I can generate a **Markdown matrix table** tracking the explicit dataset parsing boundaries, filtering thresholds, and synthetic token distribution scales utilized by leading foundation repositories to manage data-centric design.
 * I can write a detailed technical explanation focusing on the **mathematics of Confident Learning noise estimation** and how joint distribution calculations govern label error isolation.
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Data-Centric-AI&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
