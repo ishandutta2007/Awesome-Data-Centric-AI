@@ -1,6 +1,10 @@
 ![Banner](assets/banner.svg)
 
 # Awesome-Data-Centric-AI
+<!-- SEO Meta: Data-Centric AI, Machine Learning, MLOps, Confident Learning, Synthetic Data -->
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+
 ## Data-Centric AI: History, Progression, Variants, & Applications
 
 **Data-Centric AI** is an engineering and operational paradigm in artificial intelligence that treats data as the primary vector for system optimization. Popularized by Andrew Ng in 2021, Data-Centric AI shifts the core development focus away from continuously tweaking model architectures to holding the architecture fixed while systematically cleaning, curating, and augmenting the underlying dataset. 
