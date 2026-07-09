@@ -12,7 +12,10 @@ In traditional **Model-Centric AI**, engineers treat the dataset as a static bas
 The technical framework governing AI dataset management has transitioned from unstructured ad-hoc crowdsourcing to automated data pipelines, web-scale synthetic curation, and native post-training alignment environments.
 
 ```mermaid
-[Ad-Hoc Model-Centric Era] ───> [Automated Label Auditing (Cleanlab, 2021)] ───> [Synthetic Data Curations (Self-Instruct)] ───> [RLVR Programmatic Hard-locks](Unvetted Noise & Baseline Drops)      (Programmatic Label Quality Scans)            (Web-Scale High-Fidelity Generations)        (Compiler-Verified Quality Gates)
+flowchart LR
+    A["Ad-Hoc Model-Centric Era (Unvetted Noise & Baseline Drops)"] --> B["Automated Label Auditing (Cleanlab, 2021) (Programmatic Label Quality Scans)"]
+    B --> C["Synthetic Data Curations (Self-Instruct) (Web-Scale High-Fidelity Generations)"]
+    C --> D["RLVR Programmatic Hard-locks (Compiler-Verified Quality Gates)"]
 ```
 
 *   **The Ad-Hoc Model-Centric Era (Traditional Machine Learning, Pre-2021)**
@@ -54,7 +57,12 @@ To maintain absolute data quality across large-scale optimization loops, data-ce
 
 
 ```mermaid
-The Continuous Data-Centric Engineering Loop[Raw Data Ingestion] ───> [Confident Learning Scan] ───> [Prune Redundant Elements via CoreSet]│▼[Optimal Post-Training Alignment] <─── [RLVR Quality Gate Check] <─── [Generate Synthetic Edge Cases]
+flowchart TB
+    A["Raw Data Ingestion"] --> B["Confident Learning Scan"]
+    B --> C["Prune Redundant Elements via CoreSet"]
+    C --> D["Generate Synthetic Edge Cases"]
+    D --> E["RLVR Quality Gate Check"]
+    E --> F["Optimal Post-Training Alignment"]
 ```
 
 *   **Process-Supervised Evaluation Gauges (PRMs)**
