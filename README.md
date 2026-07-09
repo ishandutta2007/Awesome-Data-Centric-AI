@@ -18,18 +18,12 @@ flowchart LR
     C --> D["RLVR Programmatic Hard-locks (Compiler-Verified Quality Gates)"]
 ```
 
-*   **The Ad-Hoc Model-Centric Era (Traditional Machine Learning, Pre-2021)**
-    *   *Concept:* The baseline development standard. Datasets were viewed as immutable foundations collected via massive, unvetted web-scrapes or unvetted human crowd-sourcing (e.g., legacy ImageNet or early text corpuses containing noisy duplicates, mismatched text strings, and corrupted pixel fields). Engineers ignored these errors, choosing instead to counter data noise by scaling up model depth and tweaking model configurations.
-    *   *Limitation:* Intolerable optimization waste. Training a massive network on noisy, poorly labeled data introduces persistent hallucinations, forcing companies to spend millions on cloud compute to make models memorise or ignore data artifacts.
-*   **The Programmatic Label Quality & Auditing Era (~2021–2023)**
-    *   *Concept:* Turned dataset curation into a rigorous, automated engineering discipline. Sparked by Andrew Ng’s Data-Centric movement, frameworks like **Cleanlab** formalized **Confident Learning**. Instead of manually reviewing millions of samples, specialized algorithms run inference passes over the dataset using frozen models, calculating out-of-distribution perplexities and log-probability variances to flag mislabeled or conflicting data points automatically.
-    *   *Significance:* Slashed label noise and data bloat. It proved that removing $10\%$ of corrupt data rows improves a system’s accuracy far more than adding millions of clean parameters to the model.
-*   **The Web-Scale High-Fidelity Synthetic Curation Era (~2023–2025)**
-    *   *Concept:* Solved the impending human data exhaustion crisis ("The Data Wall"). As models scaled past trillion-token limits, high-quality human-written text and pristine visual assets were fully exhausted. Advanced pipelines turned to high-capacity frontier models to synthesize training materials using **Self-Instruct frameworks**.
-    *   *Significance:* The general agent takes small human-vetted seed prompt examples and recursively mutates them into millions of pristine alternative mathematical proofs, Python execution traces, and high-rank textbook scenarios, scaling dataset token ingestion loops with pristine, synthetic data.
-*   **The Compiler-Locked Programmatic Verification Era (~2025–Present)**
-    *   *Concept:* The current modern state-of-the-art infrastructure baseline. Ported data curation out of loose, statistical neural scoring and straight into deterministic software enclaves. Popularized by modern reasoning architectures (such as OpenAI's o-series and DeepSeek-R1), data quality is checked by **Reinforcement Learning with Verifiable Rewards (RLVR)** [INDEX: 17].
-    *   *Significance:* Training datasets are generated, cleaned, and scored by hardcoded software environments (like sandboxed code compilers or mathematical theorem provers) [INDEX: 17, 21]. A data row is only accepted into the training core if its output path compiles without error, establishing a zero-noise data loop [INDEX: 17].
+| Era | Details | Year | Paper | Link |
+|---|---|---|---|---|
+| The Ad-Hoc Model-Centric Era | **Concept:** The baseline development standard, relying on massive unvetted web-scrapes.<br>**Limitation:** Intolerable optimization waste due to persistent hallucinations. | Pre-2021 | [N/A](#) | [Details](pages/ad-hoc.md) |
+| The Programmatic Label Quality & Auditing Era | **Concept:** Automated engineering discipline using Confident Learning.<br>**Significance:** Slashed label noise and data bloat. | 2021 | [Confident Learning](https://arxiv.org/abs/1911.00068) | [Details](pages/prog-label.md) |
+| The Web-Scale High-Fidelity Synthetic Curation Era | **Concept:** Solved impending human data exhaustion crisis using Self-Instruct.<br>**Significance:** Recursively mutates small vetted seeds into millions of pristine scenarios. | 2023 | [Self-Instruct](https://arxiv.org/abs/2212.10560) | [Details](pages/web-scale.md) |
+| The Compiler-Locked Programmatic Verification Era | **Concept:** RLVR checking via hardcoded software environments.<br>**Significance:** Zero-noise data loop enforced by compilers. | 2025 | [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | [Details](pages/compiler-locked.md) |
 
 ---
 
@@ -37,17 +31,12 @@ flowchart LR
 
 Data-Centric AI methodologies are strictly categorized based on the exact automated mechanisms deployed to cleanse, augment, and audit the training data matrix.
 
-- ### A. Confident Learning (Programmatic Label Cleansing)
-	*   **Mechanism:** Evaluates dataset validity by estimating the joint distribution of noisy labels and true labels. The system analyzes a model’s out-of-sample predicted class probabilities across the dataset, isolating coordinates where the human-assigned label diverges heavily from the model's latent representation certainty, flagging the sample for erasure or automated relabeling.
-
-- ### B. CoreSet Selection & Data Pruning
-	*   **Mechanism:** Slashes dataset redundancy mathematically. Forcing a model to read billions of repetitive data samples introduces severe training compute waste. CoreSet algorithms (like k-center clustering or gradient-matching fields) analyze the geometric coordinates of data points, pruning away redundant rows to isolate a tiny, information-dense subset (CoreSet) that preserves the identical optimization trajectory of the complete dataset.
-
-- ### C. Generative Synthetic Augmentation
-	*   **Mechanism:** Uses deep generative models to rewrite or visually alter datasets on-the-fly. Large Language Models mutate instruction pairs to create diverse edge-case reasoning tests, while video and image diffusion models execute photorealistic asset variation (altering lighting, perspective, and weather parameters), multiplexing data assets safely.
-
-- ### D. Automated Feature Store Curations
-	*   **Mechanism:** An infrastructure-level framework tailored for enterprise MLOps. It treats data features as reusable, version-controlled software assets, hosting centralized pipelines that dynamically track, transform, and serve features across multiple disconnected model endpoints concurrently.
+| Variant | Mechanism | Year | Paper | Link |
+|---|---|---|---|---|
+| Confident Learning | Evaluates dataset validity by estimating joint distributions of noisy and true labels. | 2019 | [Confident Learning](https://arxiv.org/abs/1911.00068) | [Details](pages/confident-learning.md) |
+| CoreSet Selection | Slashes dataset redundancy mathematically using clustering or gradient-matching fields. | 2020 | [DeepCore](https://arxiv.org/abs/2204.08477) | [Details](pages/coreset.md) |
+| Generative Synthetic Augmentation | Uses deep generative models to rewrite or visually alter datasets on-the-fly. | 2022 | [GenAug](https://arxiv.org/abs/2302.07923) | [Details](pages/gen-aug.md) |
+| Automated Feature Store | Infrastructure-level framework tailored for enterprise MLOps treating data features as reusable assets. | 2017 | [Michelangelo](https://arxiv.org/abs/1712.06246) | [Details](pages/feature-store.md) |
 
 ---
 
@@ -65,10 +54,10 @@ flowchart TB
     E --> F["Optimal Post-Training Alignment"]
 ```
 
-*   **Process-Supervised Evaluation Gauges (PRMs)**
-    *   *Profile:* Granular token step quality auditing [INDEX: 16]. Instead of scoring only the final output string of an instruction set, a process-supervised value network checks every individual step dynamically [INDEX: 16]. If a data sample features a logical leap or calculation error midway, the PRM flags it, preventing corrupt data fields from entering the pre-training loop [INDEX: 16].
-*   **Vector Database Deduplication Blocks**
-    *   *Profile:* Slashes data leakage and memorization traps [INDEX: 18]. Large text and visual corpuses frequently host identical duplicated entries. Dense sentence encoders project incoming data pools into high-dimensional geometric coordinates, using fast vector search index lookups to instantly scan and purge semantic duplicates before training begins [INDEX: 18].
+| Component | Profile | Year | Paper | Link |
+|---|---|---|---|---|
+| Process-Supervised Evaluation (PRMs) | Granular token step quality auditing. Value network checks every step dynamically. | 2023 | [PRMs](https://arxiv.org/abs/2305.20050) | [Details](pages/prm.md) |
+| Vector Database Deduplication | Slashes data leakage and memorization traps via dense sentence encoders and high-dimensional geometric coordinates. | 2021 | [Deduplicating Training Data](https://arxiv.org/abs/2107.06499) | [Details](pages/vector-dedup.md) |
 
 ---
 
@@ -76,23 +65,20 @@ flowchart TB
 
 Implementing large-scale data-centric pipelines across massive distributed high-performance computing clusters introduces severe data latency and alignment constraints.
 
-*   **The Distributed Dataloader Load-Imbalance and I/O Bus Bottleneck**
-    *   *The Problem:* Evaluating, cleaning, and filtering millions of complex, multi-modal data samples on-the-fly during a distributed training run introduces intense processing overheads on host CPU threads. If data-cleaning transformations run slowly, the GPU Tensor Cores sit idle entering dead wait states, stalling training throughput.
-    *   *Mitigation:* Implementing **GPU-Fused Batched Data Augmentations (such as NVIDIA DALI protocols)**, loading raw data shards into VRAM once and executing all formatting, cleaning, and warping steps concurrently inside fast GPU register slots right before the forward pass.
-*   **The Distribution Drift and Echo-Chamber Amplification Wall**
-    *   *The Problem:* Heavily relying on synthetic data generated by current models to train the next generation of models can trigger **Model Collapse**. If a model ingests its own un-vetted generations recursively over multiple epochs, errors and statistical artifacts accumulate, causing the downstream model's output distribution to over-generalize and lose structural variance.
-    *   *Mitigation:* Hardcoding strict **External Software Verifiers (RLVR structures)** into the synthetic data generation loop [INDEX: 17]. Synthetic mathematical or programming tokens are passed through compilers natively; any asset that fails unit testing is evicted, ensuring the model only learns from verified truths [INDEX: 17].
+| Challenge | Mitigation | Year | Paper | Link |
+|---|---|---|---|---|
+| Distributed Dataloader Load-Imbalance | GPU-Fused Batched Data Augmentations (like NVIDIA DALI) to execute formatting in VRAM. | 2018 | [NVIDIA DALI](#) | [Details](pages/dataloader.md) |
+| Distribution Drift (Model Collapse) | Hardcoding strict External Software Verifiers (RLVR) into synthetic loops. | 2023 | [The Curse of Recursion](https://arxiv.org/abs/2305.17493) | [Details](pages/model-collapse.md) |
 
 ---
 
 ## 5. Frontier Real-World AI Industrial Applications
 
-*   **Pre-Training Web-Scale Foundational Transformers (Llama / DeepSeek)**
-    *   *Application:* Guides cluster-wide dataset selection and token curation [INDEX: 15]. Infrastructure teams run automated deduplication, quality filtering, and textbook-style synthetic formatting over multi-trillion token corpuses, ensuring that multi-million dollar training budgets spent over thousands of GPUs maximize optimization returns [INDEX: 15].
-*   **Autonomous Vehicle Edge Perception Hardening (Sim-to-Real)**
-    *   *Application:* Secures computer vision systems against volatile road conditions [INDEX: 1]. Instead of relying on manual field recording, data-centric systems use text-guided diffusion models to programmatically mutate existing driving clips—injecting heavy rain glares, sudden blizzard conditions, and highly chaotic multi-object construction zones into the training matrix—ensuring safe trajectory tracking.
-*   **Enterprise Credit Scoring and Tabular Compliance Auditing**
-    *   *Application:* Regulates distributed financial allocation models. Automated confident learning and data re-weighting pipelines clean historical credit databases, isolating mislabeled loan registries and stripping out systemic redlining proxy variables to ensure the downstream model optimizes strictly over verified financial competencies.
+| Application | Details | Year | Paper | Link |
+|---|---|---|---|---|
+| Pre-Training Web-Scale Transformers | Guides cluster-wide dataset selection and token curation for LLMs like Llama and DeepSeek. | 2023 | [Llama](https://arxiv.org/abs/2302.13971) | [Details](pages/llama.md) |
+| Autonomous Vehicle Edge Perception | Secures computer vision systems against volatile road conditions using diffusion models. | 2020 | [Waymo Open Dataset](https://arxiv.org/abs/1912.04838) | [Details](pages/av.md) |
+| Enterprise Credit Scoring | Regulates financial models using automated confident learning and data re-weighting pipelines. | 2021 | [Fairness in ML](https://arxiv.org/abs/2105.02725) | [Details](pages/credit.md) |
 
 ---
 
