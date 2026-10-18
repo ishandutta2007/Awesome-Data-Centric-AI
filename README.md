@@ -154,6 +154,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -164,67 +166,26 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global data-centric AI and data annotation & labeling market is estimated between **$2.1B and $6.3B in 2026** (scaling to **$9.3B–$17.1B by 2030** at an estimated **23%–28% CAGR**), catalyzed by generative AI, LLM alignment, and multimodal training demands. The sector is **moderately fragmented yet increasingly concentrated at the top**, with mega-infrastructure titans (e.g., Scale AI, Snorkel AI) capturing outsized enterprise budgets while specialized tooling platforms compete in niche multimodal, physical AI, and programmatic niches.
+
+
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snorkel Flow](https://snorkel.ai/)**  
-
-  **Programmatic AI data development platform**—the first of its kind . Enables data science teams to **label and curate data by writing code** rather than manual annotation, accelerating data development 10-100x for specialized enterprise AI . Includes **SOC 2 Type II and HIPAA compliance** . Integrates with **Azure Blob Storage, ADLS, and Azure Form Recognizer** for document processing . Kubernetes-native, runs on **AKS** . **Available in AWS Marketplace** for AWS EDP credit application .
-
-
-
-- **[Scale AI](https://scale.com/)**  
-
-  **High-leverage data platform for AI-enabled businesses** . **Scale Pro** provides best-in-class labeling with dedicated Engagement Managers and SLAs . **Nucleus** is a dataset management tool for visualizing data at scale, curating important segments, and correcting failure points . **Gen AI Platform** enables fine-tuning, RAG pipelines, and secure deployment in customer VPC (AWS/Azure) . **Evolved from pure labeling to full-stack AI infrastructure**—valued at **$29B+** after Meta investment (June 2025) .
-
-
-
-- **[Labelbox](https://labelbox.com/)**  
-
-  **Data factory for generative AI** combining expert labeling services with the industry-leading labeling platform . **Alignerr community** of highly educated experts for RLHF, SFT, multimodal LLM evaluation, preference ranking, and red teaming . **Horizon** provides reinforcement learning environments that mirror real work—used by **90%+ of leading US AI labs** . **Recursion Managed Agents** run autonomously, get graded, and improve from their own work. Raised **$100M+ Series E** at **$1.25B pre-money valuation** (October 2026) .
-
-
-
-- **[Appen](https://www.appen.com/)**  
-
-  **AI Data Platform (ADAP)** merging automation and human oversight . Supports **text, images, audio, video, 3D point cloud, and 4D annotation** . **50M+ people hours on platform**, **20K+ AI projects completed**, **80% of leading LLM builders trust Appen** . **GDPR, SOC, HIPAA, and ISO/IEC 27001:2013 certified** . **The veteran large-scale workforce labeling provider**—broad capability surface with mature processes .
-
-
-
-- **[CloudFactory](https://www.cloudfactory.com/)**  
-
-  **Full-stack AI Platform** with four integrated engines: **Data Engine** (collect, clean, annotate), **Training Engine** (fine-tune with RLHF), **Inference Engine** (monitor outputs, handle errors), and **AI Engine** (orchestrate workflows) . Targets industries where **AI failure cost is highest**—healthcare, finance, embodied AI (robotics/AVs) . **The "AI confidence gap" specialist**—focuses on moving AI from pilot purgatory to production reliability .
-
-
-
-- **[Prodigy](https://prodigy.ai/)**  
-
-  **Annotation tool for AI, Machine Learning & NLP** from the creators of spaCy . **Runs entirely on your own machines**—no external service dependencies, no data leaves your servers . **Lifetime license, pay once, use forever** . Built-in workflows for **active learning, model-assisted labeling, and training from annotations** . **100% data privacy and ownership**—models and assets are entirely yours, exportable in standard formats with no lock-in .
-
-
-
-- **[SuperAnnotate](https://www.superannotate.com/)**  
-
-  **Enterprise platform for dataset creation and model development** . Features **Import (integrations, URLs), Pre-annotations (active learning), Explore (native query language for dataset filtering), Subsets, Bulk actions, and Orchestrate (pipeline automation)** . **Python SDK** for programmatic project and annotation management . **Fully multimodal**—supports text, images, video, audio, code, and hybrid use cases . Available on **Google Cloud Marketplace** with **Vertex AI integration** for active learning pipelines .
-
-
-
-- **[Dataloop](https://dataloop.ai/)**  
-
-  **Agentic AI orchestration platform** for multimodal data workflows . Integrated with **Databricks** for Unity Catalog data ingestion, model fine-tuning (RLHF), and RAG workflows . **NVIDIA NIM and NeMo integration** for GPU-accelerated inference pipelines . **VLM agents** powered by **NVIDIA Cosmos Nemotron 34B** for image/video analysis . **Automated data preparation pipelines** for unstructured multimodal data.
-
-
-
-- **[Encord](https://encord.com/)**  
-
-  **World's first fully multimodal AI data platform** . Expanded from computer vision and medical data to **document, text, and audio** curation and annotation . **Multimodal annotation editor**—analyze and annotate images, videos, audio, text, and DICOM files in one view . **Index** for streamlined data management and curation with embedding-based natural language search . **RLHF flows** for Generative Video and Audio AI training.
-
-
-
-- **[V7](https://www.v7labs.com/)**  
-
-  **AI data labeling and ML training data platform** . **Annotation suite** with AI-assisted tools—claims **10x speedup**, turning months-long projects into weeks . **Multi-stage review workflows** with roles, tasks, conditional logic, and automations . Supports **videos, PDFs, architectural drawings, SVS, DICOM** and more.
+| Platform | Valuation / Revenue (Scale) | Starting Pricing Tier | Free Tier Limits / Trial Limits | Key Capabilities & Highlights |
+|---|---|---|---|---|
+| **[Scale AI](https://scale.com/)** | **$29.0B** valuation *(Meta round, 2025)* | Custom enterprise contracts; self-serve tasks from **~$0.08–$0.12/item** or usage-based tiering | **Free Tier** via Nucleus for academia/independents (core visualization & dataset insights; self-serve low-volume trial credits) | High-leverage data platform; Scale Pro labeling with dedicated SLAs, Nucleus data curation/failure debugging, enterprise Gen AI platform. |
+| **[Snorkel AI](https://snorkel.ai/)** | **$3.5B** valuation *(Series E, 2026; $375M ARR)* | Enterprise contracts starting upwards of **~$50,000–$60,000/year** | **No public free tier** (custom guided proof-of-concept / evaluation demos available upon request) | Programmatic AI data development platform; write code/heuristics instead of manual labeling, AKS native, SOC 2 Type II/HIPAA. |
+| **[Labelbox](https://labelbox.com/)** | **$1.25B** valuation *(Series E, 2026)* | **$0.10/LBU** (Starter tier; consumption-based pay-as-you-go) | **500 LBUs/month free forever**, up to 30 users, 50 projects, 25 ontologies (1,500 API req/min) | Data factory for generative AI; Alignerr expert labeling community, Horizon RL environments, autonomous Recursion Managed Agents. |
+| **[Encord](https://encord.com/)** | **$550M** valuation *(Series C, 2026)* | Custom quote-based (Starter/Team/Enterprise packaging) | **Starter Free Tier** for individual developers/prototyping (limited to small project workspaces and base annotator workflows) | Multimodal AI data platform; specialized in physical AI, computer vision, video, audio, and DICOM with embedding-based Index search. |
+| **[CloudFactory](https://www.cloudfactory.com/)** | **$250M–$500M** valuation *(Dealroom estimates)* | Custom project contracts (piece-rate from **~$0.05+/label** or hourly from **~$8–$15/hr**) | **No free tier** (offers a complimentary data sample analysis/pilot review on client-submitted test batches) | Full-stack AI operations platform (Data, Training, Inference, and AI orchestration engines) targeting high-stakes reliability sectors. |
+| **[Appen](https://www.appen.com/)** | **~$185M–$265M** market cap *(ASX: APX; ~$250M–$275M AUD)* | Custom enterprise quotes / Statements of Work (SOWs) | **No self-serve free trial** (enterprise custom PoCs/pilot phases negotiated via sales) | Veteran large-scale workforce labeling provider; text, audio, image, 3D/4D annotation, GDPR/SOC/HIPAA/ISO certified. |
+| **[SuperAnnotate](https://www.superannotate.com/)** | **~$75M–$99M** total funding *(~$27M–$35M ARR estimate)* | Paid plans starting at **~$62/user/month** (Starter/Pro tiers) | **Free Plan** for small teams/evaluations (up to 3–5 seats and 1,000 compute pipeline orchestration hours) | Multimodal dataset creation platform; native Query Language (Explore), Vertex AI integration, automated pre-annotations. |
+| **[Dataloop](https://dataloop.ai/)** | **$120M** acquisition valuation *(Acquired by Dell, 2025)* | Custom enterprise contracts | **No self-serve free plan** (evaluation PoC environments available via guided sales demo/expert consultation) | Agentic AI data orchestration platform; deep Databricks Unity Catalog, NVIDIA NIM/NeMo, and VLM agent integrations. |
+| **[V7](https://www.v7labs.com/)** | **~$100M** valuation *(~$27.7M ARR estimate)* | Starter paid tier starting at **~$499/month** (or ~$5,400/yr) | **Basic Free Plan ($0)** (restricted to 1 workspace, up to 10 user seats, and 100 files/items limit) | AI data labeling suite; 10x speedup with AI auto-annotation, multi-stage review workflows, specialized DICOM/PDF support. |
+| **[Prodigy](https://prodigy.ai/)** | **Bootstrapped** *(Explosion AI, ~$1.4M ARR estimate)* | **$490/seat** (one-time perpetual lifetime license, packs of 5) | **No self-serve free trial software download** (full interactive browser demos online; free academic research licenses on application) | Scriptable, privacy-first local annotation tool from makers of spaCy; zero data leaves your infrastructure, active learning loops. |
 
 
 
