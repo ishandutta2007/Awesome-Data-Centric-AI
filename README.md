@@ -124,108 +124,212 @@ Before updating this repository workspace layout, let me know how you would like
 </div>
 # Awesome-Data-Centric-AI
 
-# Top Data-Centric AI Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Label Quality, Programmatic Labeling & Data Curation*  
-**Last updated: October 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data-Centric AI**. These tools enable teams to systematically improve training data quality—detecting label errors, curating datasets, and building programmatic labeling pipelines—rather than only tuning model architectures.
-
-**Examples** include Snorkel Flow, Scale AI, Labelbox, Appen, CloudFactory, Prodigy, SuperAnnotate, Dataloop, Encord, and V7 (the category leaders).
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for automated data quality, label error detection, and open annotation infrastructure—ideal for ML engineers, data scientists, and organizations seeking transparent, vendor-independent data improvement.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Snorkel Flow](https://snorkel.ai/)**  
-  **Programmatic AI data development platform**—the first of its kind . Enables data science teams to **label and curate data by writing code** rather than manual annotation, accelerating data development 10-100x for specialized enterprise AI . Includes **SOC 2 Type II and HIPAA compliance** . Integrates with **Azure Blob Storage, ADLS, and Azure Form Recognizer** for document processing . Kubernetes-native, runs on **AKS** . **Available in AWS Marketplace** for AWS EDP credit application .
-
-- **[Scale AI](https://scale.com/)**  
-  **High-leverage data platform for AI-enabled businesses** . **Scale Pro** provides best-in-class labeling with dedicated Engagement Managers and SLAs . **Nucleus** is a dataset management tool for visualizing data at scale, curating important segments, and correcting failure points . **Gen AI Platform** enables fine-tuning, RAG pipelines, and secure deployment in customer VPC (AWS/Azure) . **Evolved from pure labeling to full-stack AI infrastructure**—valued at **$29B+** after Meta investment (June 2025) .
-
-- **[Labelbox](https://labelbox.com/)**  
-  **Data factory for generative AI** combining expert labeling services with the industry-leading labeling platform . **Alignerr community** of highly educated experts for RLHF, SFT, multimodal LLM evaluation, preference ranking, and red teaming . **Horizon** provides reinforcement learning environments that mirror real work—used by **90%+ of leading US AI labs** . **Recursion Managed Agents** run autonomously, get graded, and improve from their own work. Raised **$100M+ Series E** at **$1.25B pre-money valuation** (October 2026) .
-
-- **[Appen](https://www.appen.com/)**  
-  **AI Data Platform (ADAP)** merging automation and human oversight . Supports **text, images, audio, video, 3D point cloud, and 4D annotation** . **50M+ people hours on platform**, **20K+ AI projects completed**, **80% of leading LLM builders trust Appen** . **GDPR, SOC, HIPAA, and ISO/IEC 27001:2013 certified** . **The veteran large-scale workforce labeling provider**—broad capability surface with mature processes .
-
-- **[CloudFactory](https://www.cloudfactory.com/)**  
-  **Full-stack AI Platform** with four integrated engines: **Data Engine** (collect, clean, annotate), **Training Engine** (fine-tune with RLHF), **Inference Engine** (monitor outputs, handle errors), and **AI Engine** (orchestrate workflows) . Targets industries where **AI failure cost is highest**—healthcare, finance, embodied AI (robotics/AVs) . **The "AI confidence gap" specialist**—focuses on moving AI from pilot purgatory to production reliability .
-
-- **[Prodigy](https://prodigy.ai/)**  
-  **Annotation tool for AI, Machine Learning & NLP** from the creators of spaCy . **Runs entirely on your own machines**—no external service dependencies, no data leaves your servers . **Lifetime license, pay once, use forever** . Built-in workflows for **active learning, model-assisted labeling, and training from annotations** . **100% data privacy and ownership**—models and assets are entirely yours, exportable in standard formats with no lock-in .
-
-- **[SuperAnnotate](https://www.superannotate.com/)**  
-  **Enterprise platform for dataset creation and model development** . Features **Import (integrations, URLs), Pre-annotations (active learning), Explore (native query language for dataset filtering), Subsets, Bulk actions, and Orchestrate (pipeline automation)** . **Python SDK** for programmatic project and annotation management . **Fully multimodal**—supports text, images, video, audio, code, and hybrid use cases . Available on **Google Cloud Marketplace** with **Vertex AI integration** for active learning pipelines .
-
-- **[Dataloop](https://dataloop.ai/)**  
-  **Agentic AI orchestration platform** for multimodal data workflows . Integrated with **Databricks** for Unity Catalog data ingestion, model fine-tuning (RLHF), and RAG workflows . **NVIDIA NIM and NeMo integration** for GPU-accelerated inference pipelines . **VLM agents** powered by **NVIDIA Cosmos Nemotron 34B** for image/video analysis . **Automated data preparation pipelines** for unstructured multimodal data.
-
-- **[Encord](https://encord.com/)**  
-  **World's first fully multimodal AI data platform** . Expanded from computer vision and medical data to **document, text, and audio** curation and annotation . **Multimodal annotation editor**—analyze and annotate images, videos, audio, text, and DICOM files in one view . **Index** for streamlined data management and curation with embedding-based natural language search . **RLHF flows** for Generative Video and Audio AI training.
-
-- **[V7](https://www.v7labs.com/)**  
-  **AI data labeling and ML training data platform** . **Annotation suite** with AI-assisted tools—claims **10x speedup**, turning months-long projects into weeks . **Multi-stage review workflows** with roles, tasks, conditional logic, and automations . Supports **videos, PDFs, architectural drawings, SVS, DICOM** and more.
-
-## Open-Source GitHub Projects
-
-- **[cleanlab](https://github.com/cleanlab/cleanlab)**  
-  **Standard data-centric AI package for data quality and machine learning with messy data** (AGPL-3.0 for open-source) . **The most widely adopted open-source data-centric AI library**—**automatically detects data and label issues** in ML datasets using model outputs (predicted probabilities or embeddings) . **Found thousands of label errors in ImageNet, MNIST, and other benchmarks** . **Core capabilities**: **`CleanLearning.find_label_issues`** (works with any scikit-learn compatible model—pass untrained model, data, and labels), **`dataset.health_summary()`** (one-line dataset-level health check), **outlier/OOD detection**, **multi-annotator consensus**, and **active learning** . **Supports multi-label, sequence prediction, and crowdsourced data** . **The reference implementation for automated label quality assessment** .
-
-- **[Cleanlab Studio](https://cleanlab.ai/studio/)**  
-  **Client interface for Cleanlab Studio** (open-source client, commercial platform) . **Detects label errors, outliers, and data issues at scale**—the managed version of the cleanlab library for teams wanting automated data quality without infrastructure management.
-
-- **[Label Studio](https://github.com/HumanSignal/label-studio)**  
-  **The most flexible open-source data labeling tool** (Apache-2.0) . **20,000+ GitHub stars** . Supports **text, vision, audio, and time-series data** with custom XML UI templates, ML backend integrations, and webhook integrations . **The foundation for most open-source annotation workflows**—covers both small-model (CV/NLP/audio) and large-model (RLHF, dialogue ranking, LLM evaluation) scenarios.
-
-- **[CVAT](https://github.com/cvat-ai/cvat)**  
-  **Computer Vision Annotation Tool** (MIT) . **14,000+ GitHub stars** . **The industrial-grade benchmark for image and video annotation**—features **SAM3 and YOLO auto pre-labelling**, multi-level quality inspection, annotation time tracking, native S3/object storage, and 20+ export formats (COCO, YOLO, KITTI, MOT) . Helm for large-scale K8s cluster deployment .
-
-- **[Argilla](https://github.com/argilla-io/argilla)**  
-  **Human-in-the-loop annotation for LLM prompt-response evaluation and RLHF** (Apache-2.0) . **The standard open-source tool for LLM evaluation data curation**—purpose-built for preference data with HuggingFace integration.
-
-- **[Knowlyr Datalabel](https://pypi.org/project/knowlyr-datalabel/)**  
-  **Offline-first, zero-dependency annotation platform generating standalone HTML interfaces** (PyPI) . Features **5 annotation types**, **multi-annotator merge with IAA computation** (Cohen's/Fleiss' Kappa, Krippendorff's Alpha), **LLM-powered pre-labelling and quality analysis**, and **MCP support** for Claude Desktop/Code integration . **The most feature-complete lightweight open-source annotation quality tool** .
-
-### Additional Strong Open-Source Options
-
-- **[cleanlab](https://github.com/cleanlab/cleanlab)** — See above. **The only major open-source library specifically targeting automated label error detection** .
-- **[FiftyOne](https://github.com/voxel51/fiftyone)** — Open-source tool for curating high-quality datasets and refining visual AI models (Apache-2.0) . **Dataset visualization, model evaluation, and embedding analysis** .
-- **[Xtreme1](https://github.com/xtreme1-io/xtreme1)** — All-in-one data labeling and annotation platform for multimodal data (Apache-2.0, LF AI & Data Foundation project) . **3D LiDAR, image, and LLM (RLHF beta)** support .
-- **[clean-evals](https://pypi.org/project/clean-evals/)** — Open-source eval platform with **blind review, golden answer locking, and LLM judge calibration** .
-- Community **n8n** workflows for data quality alerting and annotation pipeline automation.
-
-**Frameworks for building custom systems**: Combine **cleanlab** for automated label error detection with **Label Studio** or **CVAT** for annotation, **FiftyOne** for dataset curation and visualization, **Argilla** for LLM evaluation data, and **Cleanlab Studio** for managed data quality at scale—creating a comprehensive data-centric AI stack.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Data-centric AI tools handling training data must comply with data protection regulations (GDPR, CCPA, etc.) and ensure annotation workforce agreements are in place.
-- **Open-source data-centric AI is mature for label quality but limited for enterprise curation.** **cleanlab** is the **only major open-source library specifically targeting automated label error detection**—it found thousands of errors in ImageNet and MNIST . **But no open-source tool provides the end-to-end programmatic labeling, RL environment generation, or managed workforce of Snorkel Flow, Scale AI, or Labelbox** . **Integration work is required.**
-- **The "data-centric" distinction matters.** Model-centric AI focuses on architecture and hyperparameters. **Data-centric AI focuses on systematically improving the data**—finding label errors, curating diverse examples, and building programmatic labeling functions . **cleanlab's approach is unique**: it uses **model outputs (predicted probabilities or embeddings)** to detect issues—**it works with any model, not just a specific architecture** .
-- **Label error detection is the highest-leverage data improvement.** **cleanlab found thousands of label errors in ImageNet, MNIST, and other popular benchmarks** . **If your benchmark datasets have errors, your production data almost certainly does too** . **Run `cleanlab.dataset.health_summary()` before assuming your model architecture is the problem** .
-- **The commercial landscape has evolved beyond labeling.** **Scale AI** moved from pure labeling to **full-stack AI infrastructure** (valued at $29B+) . **Labelbox** built **RL environments (Horizon) and autonomous agents (Recursion)**—used by 90%+ of leading US AI labs . **Snorkel Flow** provides **programmatic labeling** that accelerates data development 10-100x . **The category is no longer just "data labeling"—it's data development infrastructure.**
-- Self-hosted open-source solutions require proper annotation workforce management, data storage, and ongoing maintenance. **Training data is a strategic asset**—access controls and versioning are essential.
-
----
-
-**Made for ML engineers, data scientists, and organizations building transparent data-centric AI solutions.**  
+## Top Data-Centric AI Ecosystem
+
+
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+
+*Focused on Label Quality, Programmatic Labeling & Data Curation*  
+
+**Last updated: October 2026**
+
+
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Data-Centric AI**. These tools enable teams to systematically improve training data quality—detecting label errors, curating datasets, and building programmatic labeling pipelines—rather than only tuning model architectures.
+
+
+
+**Examples** include Snorkel Flow, Scale AI, Labelbox, Appen, CloudFactory, Prodigy, SuperAnnotate, Dataloop, Encord, and V7 (the category leaders).
+
+
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for automated data quality, label error detection, and open annotation infrastructure—ideal for ML engineers, data scientists, and organizations seeking transparent, vendor-independent data improvement.
+
+
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+
+
+## Table of Contents
+
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+
+- [Open-Source GitHub Projects](#open-source-github-projects)
+
+- [How to Contribute](#how-to-contribute)
+
+- [Disclaimer](#disclaimer)
+
+
+
+## SaaS/Hosted Platforms
+
+
+
+- **[Snorkel Flow](https://snorkel.ai/)**  
+
+  **Programmatic AI data development platform**—the first of its kind . Enables data science teams to **label and curate data by writing code** rather than manual annotation, accelerating data development 10-100x for specialized enterprise AI . Includes **SOC 2 Type II and HIPAA compliance** . Integrates with **Azure Blob Storage, ADLS, and Azure Form Recognizer** for document processing . Kubernetes-native, runs on **AKS** . **Available in AWS Marketplace** for AWS EDP credit application .
+
+
+
+- **[Scale AI](https://scale.com/)**  
+
+  **High-leverage data platform for AI-enabled businesses** . **Scale Pro** provides best-in-class labeling with dedicated Engagement Managers and SLAs . **Nucleus** is a dataset management tool for visualizing data at scale, curating important segments, and correcting failure points . **Gen AI Platform** enables fine-tuning, RAG pipelines, and secure deployment in customer VPC (AWS/Azure) . **Evolved from pure labeling to full-stack AI infrastructure**—valued at **$29B+** after Meta investment (June 2025) .
+
+
+
+- **[Labelbox](https://labelbox.com/)**  
+
+  **Data factory for generative AI** combining expert labeling services with the industry-leading labeling platform . **Alignerr community** of highly educated experts for RLHF, SFT, multimodal LLM evaluation, preference ranking, and red teaming . **Horizon** provides reinforcement learning environments that mirror real work—used by **90%+ of leading US AI labs** . **Recursion Managed Agents** run autonomously, get graded, and improve from their own work. Raised **$100M+ Series E** at **$1.25B pre-money valuation** (October 2026) .
+
+
+
+- **[Appen](https://www.appen.com/)**  
+
+  **AI Data Platform (ADAP)** merging automation and human oversight . Supports **text, images, audio, video, 3D point cloud, and 4D annotation** . **50M+ people hours on platform**, **20K+ AI projects completed**, **80% of leading LLM builders trust Appen** . **GDPR, SOC, HIPAA, and ISO/IEC 27001:2013 certified** . **The veteran large-scale workforce labeling provider**—broad capability surface with mature processes .
+
+
+
+- **[CloudFactory](https://www.cloudfactory.com/)**  
+
+  **Full-stack AI Platform** with four integrated engines: **Data Engine** (collect, clean, annotate), **Training Engine** (fine-tune with RLHF), **Inference Engine** (monitor outputs, handle errors), and **AI Engine** (orchestrate workflows) . Targets industries where **AI failure cost is highest**—healthcare, finance, embodied AI (robotics/AVs) . **The "AI confidence gap" specialist**—focuses on moving AI from pilot purgatory to production reliability .
+
+
+
+- **[Prodigy](https://prodigy.ai/)**  
+
+  **Annotation tool for AI, Machine Learning & NLP** from the creators of spaCy . **Runs entirely on your own machines**—no external service dependencies, no data leaves your servers . **Lifetime license, pay once, use forever** . Built-in workflows for **active learning, model-assisted labeling, and training from annotations** . **100% data privacy and ownership**—models and assets are entirely yours, exportable in standard formats with no lock-in .
+
+
+
+- **[SuperAnnotate](https://www.superannotate.com/)**  
+
+  **Enterprise platform for dataset creation and model development** . Features **Import (integrations, URLs), Pre-annotations (active learning), Explore (native query language for dataset filtering), Subsets, Bulk actions, and Orchestrate (pipeline automation)** . **Python SDK** for programmatic project and annotation management . **Fully multimodal**—supports text, images, video, audio, code, and hybrid use cases . Available on **Google Cloud Marketplace** with **Vertex AI integration** for active learning pipelines .
+
+
+
+- **[Dataloop](https://dataloop.ai/)**  
+
+  **Agentic AI orchestration platform** for multimodal data workflows . Integrated with **Databricks** for Unity Catalog data ingestion, model fine-tuning (RLHF), and RAG workflows . **NVIDIA NIM and NeMo integration** for GPU-accelerated inference pipelines . **VLM agents** powered by **NVIDIA Cosmos Nemotron 34B** for image/video analysis . **Automated data preparation pipelines** for unstructured multimodal data.
+
+
+
+- **[Encord](https://encord.com/)**  
+
+  **World's first fully multimodal AI data platform** . Expanded from computer vision and medical data to **document, text, and audio** curation and annotation . **Multimodal annotation editor**—analyze and annotate images, videos, audio, text, and DICOM files in one view . **Index** for streamlined data management and curation with embedding-based natural language search . **RLHF flows** for Generative Video and Audio AI training.
+
+
+
+- **[V7](https://www.v7labs.com/)**  
+
+  **AI data labeling and ML training data platform** . **Annotation suite** with AI-assisted tools—claims **10x speedup**, turning months-long projects into weeks . **Multi-stage review workflows** with roles, tasks, conditional logic, and automations . Supports **videos, PDFs, architectural drawings, SVS, DICOM** and more.
+
+
+
+## Open-Source GitHub Projects
+
+
+
+- **[cleanlab](https://github.com/cleanlab/cleanlab)**  
+
+  **Standard data-centric AI package for data quality and machine learning with messy data** (AGPL-3.0 for open-source) . **The most widely adopted open-source data-centric AI library**—**automatically detects data and label issues** in ML datasets using model outputs (predicted probabilities or embeddings) . **Found thousands of label errors in ImageNet, MNIST, and other benchmarks** . **Core capabilities**: **`CleanLearning.find_label_issues`** (works with any scikit-learn compatible model—pass untrained model, data, and labels), **`dataset.health_summary()`** (one-line dataset-level health check), **outlier/OOD detection**, **multi-annotator consensus**, and **active learning** . **Supports multi-label, sequence prediction, and crowdsourced data** . **The reference implementation for automated label quality assessment** .
+
+
+
+- **[Cleanlab Studio](https://cleanlab.ai/studio/)**  
+
+  **Client interface for Cleanlab Studio** (open-source client, commercial platform) . **Detects label errors, outliers, and data issues at scale**—the managed version of the cleanlab library for teams wanting automated data quality without infrastructure management.
+
+
+
+- **[Label Studio](https://github.com/HumanSignal/label-studio)**  
+
+  **The most flexible open-source data labeling tool** (Apache-2.0) . **20,000+ GitHub stars** . Supports **text, vision, audio, and time-series data** with custom XML UI templates, ML backend integrations, and webhook integrations . **The foundation for most open-source annotation workflows**—covers both small-model (CV/NLP/audio) and large-model (RLHF, dialogue ranking, LLM evaluation) scenarios.
+
+
+
+- **[CVAT](https://github.com/cvat-ai/cvat)**  
+
+  **Computer Vision Annotation Tool** (MIT) . **14,000+ GitHub stars** . **The industrial-grade benchmark for image and video annotation**—features **SAM3 and YOLO auto pre-labelling**, multi-level quality inspection, annotation time tracking, native S3/object storage, and 20+ export formats (COCO, YOLO, KITTI, MOT) . Helm for large-scale K8s cluster deployment .
+
+
+
+- **[Argilla](https://github.com/argilla-io/argilla)**  
+
+  **Human-in-the-loop annotation for LLM prompt-response evaluation and RLHF** (Apache-2.0) . **The standard open-source tool for LLM evaluation data curation**—purpose-built for preference data with HuggingFace integration.
+
+
+
+- **[Knowlyr Datalabel](https://pypi.org/project/knowlyr-datalabel/)**  
+
+  **Offline-first, zero-dependency annotation platform generating standalone HTML interfaces** (PyPI) . Features **5 annotation types**, **multi-annotator merge with IAA computation** (Cohen's/Fleiss' Kappa, Krippendorff's Alpha), **LLM-powered pre-labelling and quality analysis**, and **MCP support** for Claude Desktop/Code integration . **The most feature-complete lightweight open-source annotation quality tool** .
+
+
+
+### Additional Strong Open-Source Options
+
+
+
+- **[cleanlab](https://github.com/cleanlab/cleanlab)** — See above. **The only major open-source library specifically targeting automated label error detection** .
+
+- **[FiftyOne](https://github.com/voxel51/fiftyone)** — Open-source tool for curating high-quality datasets and refining visual AI models (Apache-2.0) . **Dataset visualization, model evaluation, and embedding analysis** .
+
+- **[Xtreme1](https://github.com/xtreme1-io/xtreme1)** — All-in-one data labeling and annotation platform for multimodal data (Apache-2.0, LF AI & Data Foundation project) . **3D LiDAR, image, and LLM (RLHF beta)** support .
+
+- **[clean-evals](https://pypi.org/project/clean-evals/)** — Open-source eval platform with **blind review, golden answer locking, and LLM judge calibration** .
+
+- Community **n8n** workflows for data quality alerting and annotation pipeline automation.
+
+
+
+**Frameworks for building custom systems**: Combine **cleanlab** for automated label error detection with **Label Studio** or **CVAT** for annotation, **FiftyOne** for dataset curation and visualization, **Argilla** for LLM evaluation data, and **Cleanlab Studio** for managed data quality at scale—creating a comprehensive data-centric AI stack.
+
+
+
+## How to Contribute
+
+
+
+1. Fork the repo.
+
+2. Add/edit entries in `README.md` (follow existing format).
+
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+
+4. Submit PR with a short explanation.
+
+
+
+Star the repo if you find it useful!
+
+
+
+## Disclaimer
+
+
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+
+- Data-centric AI tools handling training data must comply with data protection regulations (GDPR, CCPA, etc.) and ensure annotation workforce agreements are in place.
+
+- **Open-source data-centric AI is mature for label quality but limited for enterprise curation.** **cleanlab** is the **only major open-source library specifically targeting automated label error detection**—it found thousands of errors in ImageNet and MNIST . **But no open-source tool provides the end-to-end programmatic labeling, RL environment generation, or managed workforce of Snorkel Flow, Scale AI, or Labelbox** . **Integration work is required.**
+
+- **The "data-centric" distinction matters.** Model-centric AI focuses on architecture and hyperparameters. **Data-centric AI focuses on systematically improving the data**—finding label errors, curating diverse examples, and building programmatic labeling functions . **cleanlab's approach is unique**: it uses **model outputs (predicted probabilities or embeddings)** to detect issues—**it works with any model, not just a specific architecture** .
+
+- **Label error detection is the highest-leverage data improvement.** **cleanlab found thousands of label errors in ImageNet, MNIST, and other popular benchmarks** . **If your benchmark datasets have errors, your production data almost certainly does too** . **Run `cleanlab.dataset.health_summary()` before assuming your model architecture is the problem** .
+
+- **The commercial landscape has evolved beyond labeling.** **Scale AI** moved from pure labeling to **full-stack AI infrastructure** (valued at $29B+) . **Labelbox** built **RL environments (Horizon) and autonomous agents (Recursion)**—used by 90%+ of leading US AI labs . **Snorkel Flow** provides **programmatic labeling** that accelerates data development 10-100x . **The category is no longer just "data labeling"—it's data development infrastructure.**
+
+- Self-hosted open-source solutions require proper annotation workforce management, data storage, and ongoing maintenance. **Training data is a strategic asset**—access controls and versioning are essential.
+
+
+
+---
+
+
+
+**Made for ML engineers, data scientists, and organizations building transparent data-centric AI solutions.**  
+
 Let's make Data-Centric AI more open, data-driven, and quality-obsessed.
