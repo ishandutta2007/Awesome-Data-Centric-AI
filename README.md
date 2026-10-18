@@ -1,9 +1,16 @@
 ![Banner](assets/banner.svg)
 
 # Awesome-Data-Centric-AI
-<!-- SEO Meta: Data-Centric AI, Machine Learning, MLOps, Confident Learning, Synthetic Data -->
+<!-- SEO Meta: Data-Centric AI, Machine Learning, MLOps, Confident Learning, Synthetic Data, Dataset Curation, Label Quality, Cleanlab, Weak Supervision -->
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-aadge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Centric-AI?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/issues"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ## Data-Centric AI: History, Progression, Variants, & Applications
 
@@ -112,19 +119,11 @@ Before updating this repository workspace layout, let me know how you would like
 * I can generate a **Markdown matrix table** tracking the explicit dataset parsing boundaries, filtering thresholds, and synthetic token distribution scales utilized by leading foundation repositories to manage data-centric design.
 * I can write a detailed technical explanation focusing on the **mathematics of Confident Learning noise estimation** and how joint distribution calculations govern label error isolation.
 
-##  Star History
-<div align="center">
-<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Data-Centric-AI&type=date&legend=bottom-right">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&theme=dark&legend=bottom-right" />
-<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=bottom-right" />
-<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=bottom-right" />
-</picture>
-</a>
-</div>
-# Awesome-Data-Centric-AI
+---
 
-## Top Data-Centric AI Ecosystem
+# 🌐 Awesome Data-Centric AI Directory
+
+## 🏆 Top Data-Centric AI Ecosystem
 
 
 
@@ -152,27 +151,25 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Enterprise Platforms](#-saas--hosted-enterprise-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [⭐ Star History](#-star-history)
+- [📜 Disclaimer](#-disclaimer)
 
 
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global data-centric AI and data annotation & labeling market is estimated between **$2.1B and $6.3B in 2026** (scaling to **$9.3B–$17.1B by 2030** at an estimated **23%–28% CAGR**), catalyzed by generative AI, LLM alignment, and multimodal training demands. The sector is **moderately fragmented yet increasingly concentrated at the top**, with mega-infrastructure titans (e.g., Scale AI, Snorkel AI) capturing outsized enterprise budgets while specialized tooling platforms compete in niche multimodal, physical AI, and programmatic niches.
 
 
 
-## SaaS/Hosted Platforms
+## 🏢 SaaS & Hosted Enterprise Platforms
 
 | Platform | Valuation / Revenue (Scale) | Starting Pricing Tier | Free Tier Limits / Trial Limits | Key Capabilities & Highlights |
 |---|---|---|---|---|
@@ -189,108 +186,91 @@ The global data-centric AI and data annotation & labeling market is estimated be
 
 
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
+Curated open-source tooling for automated label cleaning, dataset debugging, active learning, data validation, and dataset curation. Each project is ranked below in descending order by GitHub star count:
 
+- **[Label Studio](https://github.com/HumanSignal/label-studio)** [![Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers)  
+  **The most flexible open-source multi-type data labeling & annotation tool** (Apache-2.0) . Supports **text, computer vision, audio, and time-series data** with customizable XML UI templates, ML backend auto-labeling integrations, and webhooks . Serves as the primary foundation for open-source annotation across CV/NLP and LLM evaluation (RLHF, DPO, prompt-response ranking) .
 
-- **[cleanlab](https://github.com/cleanlab/cleanlab)**  
+- **[CVAT](https://github.com/cvat-ai/cvat)** [![Stars](https://img.shields.io/github/stars/cvat-ai/cvat?style=social&color=white)](https://github.com/cvat-ai/cvat/stargazers)  
+  **Computer Vision Annotation Tool** (MIT) . **The industrial-grade benchmark for image and video annotation**—features **SAM and YOLO auto pre-labelling**, multi-level quality inspection, annotation time tracking, native S3/cloud object storage connectors, and 20+ standard export formats (COCO, YOLO, Pascal VOC, KITTI, MOT) . Helm chart support for production Kubernetes clusters .
 
-  **Standard data-centric AI package for data quality and machine learning with messy data** (AGPL-3.0 for open-source) . **The most widely adopted open-source data-centric AI library**—**automatically detects data and label issues** in ML datasets using model outputs (predicted probabilities or embeddings) . **Found thousands of label errors in ImageNet, MNIST, and other benchmarks** . **Core capabilities**: **`CleanLearning.find_label_issues`** (works with any scikit-learn compatible model—pass untrained model, data, and labels), **`dataset.health_summary()`** (one-line dataset-level health check), **outlier/OOD detection**, **multi-annotator consensus**, and **active learning** . **Supports multi-label, sequence prediction, and crowdsourced data** . **The reference implementation for automated label quality assessment** .
+- **[ydata-profiling](https://github.com/Data-Centric-AI-Community/fg-data-profiling)** [![Stars](https://img.shields.io/github/stars/Data-Centric-AI-Community/fg-data-profiling?style=social&color=white)](https://github.com/Data-Centric-AI-Community/fg-data-profiling/stargazers)  
+  **Automated exploratory data analysis, dataset profiling, and data-centric quality reporting** (MIT) . Generates rich interactive HTML profiling reports from pandas and Spark DataFrames with one line of code . Computes detailed data distributions, missing value audits, correlation matrices, duplicate analyses, and data skew alerts to catch data anomalies before training .
 
+- **[Great Expectations](https://github.com/great-expectations/great_expectations)** [![Stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)  
+  **The leading open-source data quality assertion and validation framework** (Apache-2.0) . Enables automated pipeline testing, dataset profiling, and documentation for enterprise data-centric workflows . Hardcodes programmatic assertions ensuring datasets adhere to strict structural and distributional requirements before ingestion into model training loops .
 
+- **[cleanlab](https://github.com/cleanlab/cleanlab)** [![Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)  
+  **The standard data-centric AI library for automated label error detection and data quality** (AGPL-3.0) . Based on **Confident Learning** theory, it mathematically discovers label errors, outliers, near-duplicates, and dataset issues across any ML model outputs (predicted probabilities or embeddings) . Uncovered thousands of pervasive label errors in standard academic benchmarks like ImageNet and MNIST . Core APIs include `CleanLearning.find_label_issues()`, dataset health reports, and active learning .
 
-- **[Cleanlab Studio](https://cleanlab.ai/studio/)**  
+- **[FiftyOne](https://github.com/voxel51/fiftyone)** [![Stars](https://img.shields.io/github/stars/voxel51/fiftyone?style=social&color=white)](https://github.com/voxel51/fiftyone/stargazers)  
+  **Open-source platform for curating high-quality datasets and visualizing computer vision models** (Apache-2.0) . Provides visual dataset curation, interactive embedding spaces via UMAP/t-SNE, model prediction evaluation, and automated detection of annotation mistakes and dataset edge cases .
 
-  **Client interface for Cleanlab Studio** (open-source client, commercial platform) . **Detects label errors, outliers, and data issues at scale**—the managed version of the cleanlab library for teams wanting automated data quality without infrastructure management.
+- **[Evidently](https://github.com/evidentlyai/evidently)** [![Stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white)](https://github.com/evidentlyai/evidently/stargazers)  
+  **Open-source ML data monitoring, dataset drift detection, and evaluation framework** (Apache-2.0) . Tracks statistical distribution drift, covariate shift, data quality degradation, and text/LLM evaluation metrics across batch and streaming data pipelines with interactive visual dashboards and programmatic alerts .
 
+- **[Snorkel](https://github.com/snorkel-team/snorkel)** [![Stars](https://img.shields.io/github/stars/snorkel-team/snorkel?style=social&color=white)](https://github.com/snorkel-team/snorkel/stargazers)  
+  **System for programmatic weak supervision and training data curation** (Apache-2.0) . Allows developers to build, combine, and manage multi-source labeling functions (heuristics, regex, third-party models) to automatically label datasets without extensive manual annotation, founding the modern programmatic labeling paradigm .
 
+- **[Argilla](https://github.com/argilla-io/argilla)** [![Stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)  
+  **Human-in-the-loop data curation and annotation platform for LLMs and Generative AI** (Apache-2.0) . Built specifically for prompt engineering evaluation, preference data collection (DPO/RLHF), instruction fine-tuning datasets, and synthetic dataset feedback loops with direct Hugging Face ecosystem integration .
 
-- **[Label Studio](https://github.com/HumanSignal/label-studio)**  
+- **[modAL](https://github.com/modAL-python/modAL)** [![Stars](https://img.shields.io/github/stars/modAL-python/modAL?style=social&color=white)](https://github.com/modAL-python/modAL/stargazers)  
+  **Modular active learning framework for Python and scikit-learn** (MIT) . Streamlines pool-based, stream-based, and uncertainty sampling routines to systematically identify the most informative data points for human labeling, minimizing overall annotation budgets while maximizing model accuracy gains .
 
-  **The most flexible open-source data labeling tool** (Apache-2.0) . **20,000+ GitHub stars** . Supports **text, vision, audio, and time-series data** with custom XML UI templates, ML backend integrations, and webhook integrations . **The foundation for most open-source annotation workflows**—covers both small-model (CV/NLP/audio) and large-model (RLHF, dialogue ranking, LLM evaluation) scenarios.
+- **[Xtreme1](https://github.com/xtreme1-io/xtreme1)** [![Stars](https://img.shields.io/github/stars/xtreme1-io/xtreme1?style=social&color=white)](https://github.com/xtreme1-io/xtreme1/stargazers)  
+  **Next-generation open-source multimodal platform for data labeling and annotation** (Apache-2.0, LF AI & Data Foundation) . Specializes in 3D point cloud LiDAR-camera sensor fusion annotation, visual object tracking, and experimental RLHF interfaces for physical AI and embodied systems .
 
-
-
-- **[CVAT](https://github.com/cvat-ai/cvat)**  
-
-  **Computer Vision Annotation Tool** (MIT) . **14,000+ GitHub stars** . **The industrial-grade benchmark for image and video annotation**—features **SAM3 and YOLO auto pre-labelling**, multi-level quality inspection, annotation time tracking, native S3/object storage, and 20+ export formats (COCO, YOLO, KITTI, MOT) . Helm for large-scale K8s cluster deployment .
-
-
-
-- **[Argilla](https://github.com/argilla-io/argilla)**  
-
-  **Human-in-the-loop annotation for LLM prompt-response evaluation and RLHF** (Apache-2.0) . **The standard open-source tool for LLM evaluation data curation**—purpose-built for preference data with HuggingFace integration.
-
-
-
-- **[Knowlyr Datalabel](https://pypi.org/project/knowlyr-datalabel/)**  
-
-  **Offline-first, zero-dependency annotation platform generating standalone HTML interfaces** (PyPI) . Features **5 annotation types**, **multi-annotator merge with IAA computation** (Cohen's/Fleiss' Kappa, Krippendorff's Alpha), **LLM-powered pre-labelling and quality analysis**, and **MCP support** for Claude Desktop/Code integration . **The most feature-complete lightweight open-source annotation quality tool** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[cleanlab](https://github.com/cleanlab/cleanlab)** — See above. **The only major open-source library specifically targeting automated label error detection** .
-
-- **[FiftyOne](https://github.com/voxel51/fiftyone)** — Open-source tool for curating high-quality datasets and refining visual AI models (Apache-2.0) . **Dataset visualization, model evaluation, and embedding analysis** .
-
-- **[Xtreme1](https://github.com/xtreme1-io/xtreme1)** — All-in-one data labeling and annotation platform for multimodal data (Apache-2.0, LF AI & Data Foundation project) . **3D LiDAR, image, and LLM (RLHF beta)** support .
-
-- **[clean-evals](https://pypi.org/project/clean-evals/)** — Open-source eval platform with **blind review, golden answer locking, and LLM judge calibration** .
-
-- Community **n8n** workflows for data quality alerting and annotation pipeline automation.
-
-
-
-**Frameworks for building custom systems**: Combine **cleanlab** for automated label error detection with **Label Studio** or **CVAT** for annotation, **FiftyOne** for dataset curation and visualization, **Argilla** for LLM evaluation data, and **Cleanlab Studio** for managed data quality at scale—creating a comprehensive data-centric AI stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data-centric AI tools handling training data must comply with data protection regulations (GDPR, CCPA, etc.) and ensure annotation workforce agreements are in place.
-
-- **Open-source data-centric AI is mature for label quality but limited for enterprise curation.** **cleanlab** is the **only major open-source library specifically targeting automated label error detection**—it found thousands of errors in ImageNet and MNIST . **But no open-source tool provides the end-to-end programmatic labeling, RL environment generation, or managed workforce of Snorkel Flow, Scale AI, or Labelbox** . **Integration work is required.**
-
-- **The "data-centric" distinction matters.** Model-centric AI focuses on architecture and hyperparameters. **Data-centric AI focuses on systematically improving the data**—finding label errors, curating diverse examples, and building programmatic labeling functions . **cleanlab's approach is unique**: it uses **model outputs (predicted probabilities or embeddings)** to detect issues—**it works with any model, not just a specific architecture** .
-
-- **Label error detection is the highest-leverage data improvement.** **cleanlab found thousands of label errors in ImageNet, MNIST, and other popular benchmarks** . **If your benchmark datasets have errors, your production data almost certainly does too** . **Run `cleanlab.dataset.health_summary()` before assuming your model architecture is the problem** .
-
-- **The commercial landscape has evolved beyond labeling.** **Scale AI** moved from pure labeling to **full-stack AI infrastructure** (valued at $29B+) . **Labelbox** built **RL environments (Horizon) and autonomous agents (Recursion)**—used by 90%+ of leading US AI labs . **Snorkel Flow** provides **programmatic labeling** that accelerates data development 10-100x . **The category is no longer just "data labeling"—it's data development infrastructure.**
-
-- Self-hosted open-source solutions require proper annotation workforce management, data storage, and ongoing maintenance. **Training data is a strategic asset**—access controls and versioning are essential.
-
-
+- **[CleanVision](https://github.com/cleanlab/cleanvision)** [![Stars](https://img.shields.io/github/stars/cleanlab/cleanvision?style=social&color=white)](https://github.com/cleanlab/cleanvision/stargazers)  
+  **Automated data curation and quality issue auditing for image datasets** (AGPL-3.0) . Scans image datasets to automatically detect low-quality, blurry, dark, overexposed, low-information, and near-duplicate images with a single line of Python, preventing corrupt data from poisoning computer vision models .
 
 ---
 
+### 📦 Ecosystem Tooling & Python Packages
 
+- **[Knowlyr Datalabel](https://pypi.org/project/knowlyr-datalabel/)** — Offline-first, zero-dependency annotation tool generating standalone HTML interfaces with 5 annotation modalities, multi-annotator merge with Inter-Annotator Agreement (Cohen's/Fleiss' Kappa, Krippendorff's Alpha), and MCP server support.
+- **[clean-evals](https://pypi.org/project/clean-evals/)** — Lightweight evaluation framework featuring blind double-review workflows, golden answer locking, and LLM judge calibration.
+- **[Cleanlab Studio Client](https://github.com/cleanlab/cleanlab-studio)** — Python SDK client for Cleanlab Studio's enterprise AutoML and cloud-scale label correction engines.
 
-**Made for ML engineers, data scientists, and organizations building transparent data-centric AI solutions.**  
+---
 
-Let's make Data-Centric AI more open, data-driven, and quality-obsessed.
+## 🛠️ How to Contribute
+
+Contributions are warmly welcomed! Help make Data-Centric AI tooling accessible to every engineer:
+
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a new branch** (`git checkout -b feature/new-data-tool`).
+3. 📝 **Add or update entries** in `README.md` following the established formatting guidelines (include tool name, website/repo link, star badge, and clear summary).
+4. 🚀 **Submit a Pull Request** with a concise description of the addition.
+
+---
+
+## 💖 Support & Community
+
+If you find this curated collection useful for your datasets, research, or production ML pipelines, please consider supporting the project:
+
+- ⭐ **Star this repository** to help other practitioners discover data-centric techniques!
+- 🍴 **Fork & Share** with your fellow AI researchers, ML engineers, and data teams.
+- 💬 **Join our community** discussions on [Discord](https://discord.gg/jc4xtF58Ve).
+- ☕ **Buy a coffee & sponsor**: If this project saved you hours of debugging messy labels or saved your compute budget, consider supporting maintenance and updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)!
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Centric-AI&type=date&legend=top-left)
+
+---
+
+## 📜 Disclaimer
+
+- This is a **community-curated directory** provided for educational and research purposes.
+- Data-centric AI pipelines handling real-world datasets must adhere to applicable regulatory frameworks (GDPR, CCPA, HIPAA, EU AI Act) and establish ethical workforce standards.
+- **The Data-Centric paradigm emphasizes systematic data quality over raw parameter capacity.** Finding label errors, pruning redundant tokens, and generating compiler-verified edge cases consistently yield higher leverage improvements than architecture tweaks alone.
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for ML engineers, data scientists, and researchers building robust, quality-driven AI systems.</b>
+</p>

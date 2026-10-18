@@ -1,16 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A2980" />
-      <stop offset="100%" stop-color="#26D0CE" />
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#091426" />
     </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <rect width="100%" height="100%" fill="url(#bg)" />
-  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.2)">
-    <animate attributeName="r" values="50;70;50" dur="2s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="700" cy="100" r="50" fill="rgba(255,255,255,0.2)">
-    <animate attributeName="r" values="50;70;50" dur="2.5s" repeatCount="indefinite" />
-  </circle>
-  <text x="50%" y="50%" font-family="Arial" font-size="40" font-weight="bold" fill="white" dominant-baseline="middle" text-anchor="middle">Data-Centric AI</text>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 52px;
+      letter-spacing: -1px;
+    }
+    .sub-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 19px;
+      fill: #94a3b8;
+      letter-spacing: 0.3px;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+      letter-spacing: 0.5px;
+    }
+    .data-flow {
+      stroke-dasharray: 8, 8;
+      animation: flow 20s linear infinite;
+    }
+    @keyframes flow {
+      from { stroke-dashoffset: 400; }
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="340" fill="url(#bgGrad)" />
+  <rect width="1200" height="340" fill="url(#grid)" />
+
+  <!-- Dynamic / Animated Background Vectors -->
+  <g opacity="0.35">
+    <!-- Pulsing Neural Glow Orbs in Background -->
+    <circle cx="150" cy="80" r="120" fill="url(#cyanGrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="r" values="110;135;110" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1060" cy="240" r="140" fill="url(#purpleGrad)" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.18;0.45;0.18" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="r" values="130;155;130" dur="9s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Flowing Pipeline Circuit Lines -->
+    <path d="M 0 170 Q 300 240, 600 170 T 1200 170" fill="none" stroke="#38bdf8" stroke-width="2" class="data-flow" />
+    <path d="M 0 210 Q 350 120, 700 220 T 1200 150" fill="none" stroke="#a855f7" stroke-width="1.5" class="data-flow" style="animation-duration: 15s; animation-direction: reverse;" />
+  </g>
+
+  <!-- Floating Constellation Nodes -->
+  <g opacity="0.6">
+    <circle cx="280" cy="70" r="4" fill="#38bdf8">
+      <animate attributeName="cy" values="70;62;70" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <line x1="280" y1="70" x2="340" y2="40" stroke="rgba(56,189,248,0.4)" stroke-width="1" />
+    <circle cx="340" cy="40" r="3" fill="#818cf8" />
+    
+    <circle cx="920" cy="80" r="4" fill="#c084fc">
+      <animate attributeName="cy" values="80;90;80" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <line x1="920" y1="80" x2="980" y2="110" stroke="rgba(192,132,252,0.4)" stroke-width="1" />
+    <circle cx="980" cy="110" r="3" fill="#ec4899" />
+  </g>
+
+  <!-- Foreground Title and Tagline (Kept fully in foreground and unobstructed) -->
+  <g text-anchor="middle">
+    <!-- Top Pill Indicator -->
+    <g transform="translate(600, 52)">
+      <rect x="-145" y="-16" width="290" height="32" rx="16" fill="rgba(30, 41, 59, 0.85)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2" />
+      <circle cx="-122" cy="0" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="-105" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1.2">CURATED REPOSITORY</text>
+      <text x="35" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94a3b8">• 2026 EDITION</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="132" class="title-text" fill="url(#titleGrad)">Awesome Data-Centric AI</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="174" class="sub-text">
+      Systematic Data Quality, Programmatic Labeling &amp; High-Fidelity Dataset Curation
+    </text>
+
+    <!-- Interactive / Status Badges row -->
+    <g transform="translate(600, 240)">
+      <!-- Pill 1: Label Quality -->
+      <g transform="translate(-300, 0)">
+        <rect x="-85" y="-18" width="170" height="36" rx="18" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+        <text x="0" y="5" class="pill-text" text-anchor="middle">🎯 Label Quality</text>
+      </g>
+
+      <!-- Pill 2: Confident Learning -->
+      <g transform="translate(-100, 0)">
+        <rect x="-95" y="-18" width="190" height="36" rx="18" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1" />
+        <text x="0" y="5" class="pill-text" text-anchor="middle">📊 Confident Learning</text>
+      </g>
+
+      <!-- Pill 3: Synthetic Data -->
+      <g transform="translate(100, 0)">
+        <rect x="-85" y="-18" width="170" height="36" rx="18" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1" />
+        <text x="0" y="5" class="pill-text" text-anchor="middle">⚡ Synthetic Data</text>
+      </g>
+
+      <!-- Pill 4: MLOps Pipelines -->
+      <g transform="translate(290, 0)">
+        <rect x="-85" y="-18" width="170" height="36" rx="18" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(236, 72, 153, 0.4)" stroke-width="1" />
+        <text x="0" y="5" class="pill-text" text-anchor="middle">🔄 MLOps Curation</text>
+      </g>
+    </g>
+  </g>
 </svg>
