@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-aadge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Centric-AI?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Centric-AI?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/issues"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Centric-AI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
@@ -188,7 +188,7 @@ The global data-centric AI and data annotation & labeling market is estimated be
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source tooling for automated label cleaning, dataset debugging, active learning, data validation, and dataset curation. Each project is ranked below in descending order by GitHub star count:
+Curated open-source tooling for automated label cleaning, dataset debugging, active learning, data validation, and dataset curation. Each project is ranked below in descending order by GitHub Stars_Count:
 
 - **[Label Studio](https://github.com/HumanSignal/label-studio)** [![Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers)  
   **The most flexible open-source multi-type data labeling & annotation tool** (Apache-2.0) . Supports **text, computer vision, audio, and time-series data** with customizable XML UI templates, ML backend auto-labeling integrations, and webhooks . Serves as the primary foundation for open-source annotation across CV/NLP and LLM evaluation (RLHF, DPO, prompt-response ranking) .
@@ -242,7 +242,7 @@ Contributions are warmly welcomed! Help make Data-Centric AI tooling accessible 
 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/new-data-tool`).
-3. 📝 **Add or update entries** in `README.md` following the established formatting guidelines (include tool name, website/repo link, star badge, and clear summary).
+3. 📝 **Add or update entries** in `README.md` following the established formatting guidelines (include tool name, website/repo link, Stars_Badge, and clear summary).
 4. 🚀 **Submit a Pull Request** with a concise description of the addition.
 
 ---
